@@ -1,0 +1,43 @@
+.textbox{
+	max-width: 400px;
+	grid-area: textbox;
+	text-align: right;
+}
+
+button{
+	max-width: 100px;
+}
+
+.egal{
+	max-width: 200px;
+	min-width: 210px;
+}
+
+.delete{
+	max-width: 200px;
+	min-width: 210px;
+	grid-area: d;
+}
+
+#operation{
+	grid-area: ope;
+	background: none;
+	border: 0;
+	text-align: center;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	grid-template-areas:
+		"ope textbox textbox textbox"
+		"d d . ."
+		". . . ."
+		". . . ."
+		". . . ."
+		". . . .";
+	grid-gap: 10px;
+	justify-content: center;
+	margin-top: 100px;
+}
+

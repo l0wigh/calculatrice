@@ -45,8 +45,8 @@ button:active{
 	display: grid;
 	grid-template-columns: repeat(4, 100px);
 	grid-template-areas:
-		"ope textbox textbox textbox"
-		". . d d"
+		"textbox textbox textbox textbox"
+		"d d . ."
 		". . . ."
 		". . . ."
 		". . . ."

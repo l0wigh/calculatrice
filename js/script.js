@@ -44,7 +44,7 @@ function resultat(){
 		case "/":
 			resultatCalc = chiffreUn / chiffreDeux;
 			break;
-		case "X":
+		case "x":
 			resultatCalc = chiffreUn * chiffreDeux;
 			break;
 	}

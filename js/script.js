@@ -3,7 +3,6 @@ var chiffreDeux = 0;
 var resultatCalc = 0;
 
 function ecrire(nombre){
-	var valText = document.getElementById('textbox').value;
 	document.getElementById('textbox').value += nombre;
 }
 
@@ -16,7 +15,6 @@ function supprimerun(){
 function supprimertout(){
 	document.getElementById('textbox').value = '';
 	document.getElementById('operation').value = '';
-
 }
 
 function resultat(){
@@ -44,38 +42,3 @@ function operations(ope){
 	document.getElementById('textbox').value = '';
 	document.getElementById('operation').value = ope;
 }
-
-
-
-//function resultat(){
-//	var resultat = eval(document.getElementById('textbox').value)
-//	if(resultat){
-//		document.getElementById('textbox').value = resultat;
-//	}
-//}
-
-
-//
-//function addition(){
-//	chiffreUn = parseFloat(document.getElementById('textbox').value);
-//	document.getElementById('textbox').value = '';
-//	document.getElementById('operation').value = "+";
-//}
-//
-//function soustraction(){
-//	chiffreUn = parseFloat(document.getElementById('textbox').value);
-//	document.getElementById('textbox').value = '';
-//	document.getElementById('operation').value = "-";
-//}
-//
-//function division(){
-//	chiffreUn = parseFloat(document.getElementById('textbox').value);
-//	document.getElementById('textbox').value = '';
-//	document.getElementById('operation').value = "/";
-//}
-//
-//function multiplication(){
-//	chiffreUn = parseFloat(document.getElementById('textbox').value);
-//	document.getElementById('textbox').value = '';
-//	document.getElementById('operation').value = "X";
-//}

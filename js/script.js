@@ -4,7 +4,7 @@ var resultatCalc = 0;
 
 function ecrire(nombre){
 	var valText = document.getElementById('textbox').value;
-	document.getElementById('textbox').value = valText + nombre;
+	document.getElementById('textbox').value += nombre;
 }
 
 function supprimerun(){

@@ -2,20 +2,34 @@
 	max-width: 400px;
 	grid-area: textbox;
 	text-align: right;
+	background: #131419;
+	color: white;
 }
 
 button{
 	max-width: 100px;
+	background: #131419;
+	color: white;
+	border-radius: 10px;
+	box-shadow: -2px -2px 7px  rgba(255,255,255,0.1),
+				 2px 2px 7px  rgba(0,0,0,0.8);
+}
+
+button:active{
+	max-width: 100px;
+	background: #131419;
+	color: white;
+	border-radius: 10px;
+	box-shadow: inset -2px -2px 7px  rgba(255,255,255,0.1),
+				inset  2px 2px 7px  rgba(0,0,0,0.8);
 }
 
 .egal{
-	max-width: 200px;
-	min-width: 210px;
+	min-width: 220px;
 }
 
 .delete{
-	max-width: 200px;
-	min-width: 210px;
+	min-width: 220px;
 	grid-area: d;
 }
 
@@ -24,6 +38,8 @@ button{
 	background: none;
 	border: 0;
 	text-align: center;
+	background: #131419;
+	color: white;
 }
 
 .container{
@@ -36,8 +52,36 @@ button{
 		". . . ."
 		". . . ."
 		". . . .";
-	grid-gap: 10px;
+	grid-gap: 20px;
 	justify-content: center;
-	margin-top: 100px;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 550px;
+	height: 450px;
+	margin-top: 200px;
+	border-radius: 10px;
+	background: #131419;
+	box-shadow: -5px -5px 10px  rgba(255,255,255,0.05),
+				5px 5px 15px  rgba(0,0,0,0.5);
+}
+
+body{
+	background: #131419;
+	display: flex;
+	justify-content: center;
+	font-size: 20px
+}
+
+.container input{
+	height: 30px;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	box-shadow: inset -2px -2px 7px  rgba(255,255,255,0.1),
+				inset 2px 2px 7px  rgba(0,0,0,0.8);
 }
 

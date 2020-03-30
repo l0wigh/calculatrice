@@ -8,27 +8,29 @@
 		<title>Calculatrice Javascript</title>
 	</head>
 	<body>
-		<div class="container">
-			<input id="textbox" type="text" value="" class="textbox">
-			<input id="operation" type="text" value="" disabled>
-			<button value="del" onClick="supprimerun()" class="delete">Suppr</button>
-			<button value="c" onClick="supprimertout()">C</button>
-			<button value="/" onClick="operations('/')">/</button>
-			<button value="7" onClick="ecrire(7)">7</button>
-			<button value="8" onClick="ecrire(8)">8</button>
-			<button value="9" onClick="ecrire(9)">9</button>
-			<button onClick="operations('X')">X</button>
-			<button value="4" onClick="ecrire(4)">4</button>
-			<button value="5" onClick="ecrire(5)">5</button>
-			<button value="6" onClick="ecrire(6)">6</button>
-			<button onClick="operations('-')">-</button>
-			<button value="1" onClick="ecrire(1)">1</button>
-			<button value="2" onClick="ecrire(2)">2</button>
-			<button value="3" onClick="ecrire(3)">3</button>
-			<button onClick="operations('+')">+</button>
-			<button value="0" onClick="ecrire(0)">0</button>
-			<button value="." onClick="ecrire('.')">.</button>
-			<button onClick="resultat()" class="egal">=</button>
+		<div class="box">
+			<div class="container">
+				<input id="textbox" type="text" value="" class="textbox">
+				<input id="operation" type="text" value="" disabled>
+				<button value="del" onClick="supprimerun()" class="delete">Suppr</button>
+				<button value="c" onClick="supprimertout()">C</button>
+				<button value="/" onClick="operations('/')">/</button>
+				<button value="7" onClick="ecrire(7)">7</button>
+				<button value="8" onClick="ecrire(8)">8</button>
+				<button value="9" onClick="ecrire(9)">9</button>
+				<button onClick="operations('X')">X</button>
+				<button value="4" onClick="ecrire(4)">4</button>
+				<button value="5" onClick="ecrire(5)">5</button>
+				<button value="6" onClick="ecrire(6)">6</button>
+				<button onClick="operations('-')">-</button>
+				<button value="1" onClick="ecrire(1)">1</button>
+				<button value="2" onClick="ecrire(2)">2</button>
+				<button value="3" onClick="ecrire(3)">3</button>
+				<button onClick="operations('+')">+</button>
+				<button value="0" onClick="ecrire(0)">0</button>
+				<button value="." onClick="ecrire('.')">.</button>
+				<button onClick="resultat()" class="egal">=</button>
+			</div>
 		</div>
 	</body>
 </html>

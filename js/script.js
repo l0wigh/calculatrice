@@ -2,8 +2,9 @@ var chiffreUn = 0;
 var chiffreDeux = 0;
 var resultatCalc = 0;
 var chiffreEnCours = "";
-var operateur;
+var operateur = "";
 var resultataff = 0;
+var point = 0;
 
 function ecrire(nombre){
 	if (resultataff == 1){
@@ -13,7 +14,18 @@ function ecrire(nombre){
 	}
 	else{
 		document.getElementById('textbox').value += nombre;
-		chiffreEnCours = chiffreEnCours + nombre;
+		chiffreEnCours += nombre;
+	}
+}
+
+function ecrirepoint(){
+	if (point == 1){
+		console.log("nope");
+	}
+	else{
+		document.getElementById('textbox').value += ".";
+		chiffreEnCours += ".";
+		point = 1;
 	}
 }
 
@@ -30,6 +42,8 @@ function supprimertout(){
 	chiffreUn = "";
 	chiffreDeux = "";
 	chiffreEnCours = "";
+	operateur = "";
+	point = 0
 }
 
 function resultat(){
@@ -53,17 +67,25 @@ function resultat(){
 	chiffreDeux = "";
 	chiffreEnCours = "";
 	resultataff = 1;
+	operateur = "";
+	point = 0;
 }
 
 function operations(ope){
-	if (resultataff == 1){
-		chiffreUn = parseFloat(document.getElementById('textbox').value);
-		resultataff = 0;
+	if (operateur != ""){
+		console.log("nope");
 	}
 	else{
-		chiffreUn = parseFloat(chiffreEnCours);
+		if (resultataff == 1){
+			chiffreUn = parseFloat(document.getElementById('textbox').value);
+			resultataff = 0;
+		}
+		else{
+			chiffreUn = parseFloat(chiffreEnCours);
+		}
+		document.getElementById('textbox').value += ope;
+		chiffreEnCours = "";
+		operateur = ope;
+		point = 0;
 	}
-	document.getElementById('textbox').value += ope;
-	chiffreEnCours = "";
-	operateur = ope;
 }
